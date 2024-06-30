@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kumar Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 1s ease-out;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 10px 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        section {
+            padding: 20px 0;
+        }
+        .skills, .projects, .contact, .work {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            position: relative;
+        }
+        h2:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #f39c12;
+            margin: 10px auto;
+        }
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li, .projects ul li {
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .skills ul li:hover, .projects ul li:hover {
+            background-color: #f39c12;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .skills ul li {
+            cursor: pointer;
+        }
+        .skills ul li:hover p {
+            display: block;
+        }
+        .skills ul li p {
+            display: none;
+            margin-top: 10px;
+        }
+        .projects ul li {
+            cursor: pointer;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s;
+        }
+        .contact form input:focus, .contact form textarea:focus {
+            border-color: #f39c12;
+            outline: none;
+        }
+        .contact form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact form button:hover {
+            background-color: #f39c12;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .highlight:hover {
+            background-color: #f39c12;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Ayush.jpeg" alt="Ayush Kumar" class="profile-img">
+            <h1>Ayush Kumar</h1>
+            <p>First Year B.Tech CSE Core Student at JBIT College, Dehradun</p>
+            <p>Email: <a href="mailto:ayushsoni7488@gmail.com" style="color: #fff;">ayushsoni7488@gmail.com</a></p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ayush Kumar, a first-year B.Tech CSE Core student at JBIT College, Dehradun, admitted in 2024. I have been working as a web developer for the past 6 months, specializing as a full-stack developer. I am passionate about my work and always eager to take on new challenges and projects.</p>
+    </section>
+    <section id="skills" class="skills container">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                Web Development
+                <p>Building responsive and dynamic websites using modern technologies.</p>
+            </li>
+            <li>
+                Python
+                <p>Proficient in writing efficient and scalable code for various applications.</p>
+            </li>
+            <li>
+                HTML, CSS, JavaScript
+                <p>Experienced in creating visually appealing and user-friendly web pages.</p>
+            </li>
+            <li>
+                React, Node.js
+                <p>Developing interactive UIs and backend services with JavaScript frameworks.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="projects" class="projects container">
+        <h2>Projects</h2>
+        <ul>
+            <li onclick="location.href='https://ayushkumar345.github.io/ayushkumarrrrr/#';">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio showcasing my skills, projects, and contact information.</p>
+            </li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
+    <section id="work" class="work container">
+        <h2>Looking for Part-Time and Internship Opportunities</h2>
+        <p>I am actively seeking part-time job opportunities and internships in web development and related fields. With my experience as a full-stack developer and my passion for coding, I am confident in my ability to contribute effectively to any team. If you have a project or position that you think would be a good fit, please don't hesitate to contact me.</p>
+    </section>
+    <section id="contact" class="contact container">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script>
+        // JavaScript for smooth scroll
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // JavaScript for project click action
+        document.querySelectorAll('.projects ul li').forEach(project => {
+            project.addEventListener('click', function() {
+                location.href = 'https://ayushkumar345.github.io/ayushkumarrrrr/#';
+            });
+        });
+
+        // Highlight effect on work section
+        document.querySelector('#work').addEventListener('mouseover', function() {
+            this.classList.add('highlight');
+        });
+        document.querySelector('#work').addEventListener('mouseout', function() {
+            this.classList.remove('highlight');
+        });
+    </script>
+</body>
+</html>
